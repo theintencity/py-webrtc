@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2011, Kundan Singh. All Rights Reserved.
+ * Copyright (c) 2014, Intencity Cloud Technologies <theintencity@gmail.com>.
+ */
+
 #include <string.h>
 
 #include "common_types.h"

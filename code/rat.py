@@ -1,5 +1,10 @@
-import time, sys, os, traceback
+# 
+#  Copyright (c) 2011, Kundan Singh. All Rights Reserved.
+#  Copyright (c) 2014, Intencity Cloud Technologies <theintencity@gmail.com>.
+# 
 
+
+import time, sys, os, traceback
 try:
     from webrtc import VoiceEngine, Channel
 except:

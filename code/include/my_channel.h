@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2011, Kundan Singh. All Rights Reserved.
+ * Copyright (c) 2014, Intencity Cloud Technologies <theintencity@gmail.com>.
+ */
+
 #ifndef MY_CHANNEL_H
 #define MY_CHANNEL_H 1
 

@@ -1,0 +1,37 @@
+from distutils.core import setup, Extension
+
+module1 = Extension('webrtc',
+                    sources = ['main.cpp', 'src/my_voice_engine.cpp', 'src/my_channel.cpp', 'src/my_error.cpp', 'src/my_common_types.cpp',
+                                'src/my_voe_base.cpp', 'src/my_voe_ap.cpp', 'src/my_voe_codec.cpp', 'src/my_voe_call_report.cpp',
+                                'src/my_voe_dtmf.cpp', 'src/my_voe_encryption.cpp', 'src/my_voe_external_media.cpp',
+                                ],
+                    include_dirs = ['include', '../xcodebuild/Debug/include', '../trunk', '../trunk/voice_engine/main/interface',
+                                    '../trunk/system_wrappers/interface', '/usr/include',
+                                    '/Developer/SDKs/MacOSX10.5.sdk/usr/include',
+                                    '/Developer/SDKs/MacOSX10.5.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/',
+                                    ],
+                    extra_compile_args = [ '-Wno-write-strings',
+                        '-fmessage-length=0', '-Wno-trigraphs','-fno-exceptions', '-fno-rtti', '-O0', '-Wnewline-eof', 
+                        '-DWEBRTC_TARGET_MAC_INTEL', '-DWEBRTC_MAC_INTEL', '-DWEBRTC_MAC', '-DWEBRTC_THREAD_RR',
+                        '-DWEBRTC_CLOCK_TYPE_REALTIME', '-DDYNAMIC_ANNOTATIONS_ENABLED=1', '-DWTF_USE_DYNAMIC_ANNOTATIONS=1',
+                        '-isysroot /Developer/SDKs/MacOSX10.5.sdk', 
+                        '-fno-threadsafe-statics', '-mmacosx-version-min=10.5', '-gdwarf-2', '-Wendif-labels',
+                        '-Wno-unused-parameter', '-Wno-missing-field-initializers'],
+                    # '-fvisibility=hidden', '-fvisibility-inlines-hidden',    
+                    library_dirs = ['../xcodebuild/Debug'],
+                    libraries = ['CNG', 'G711', 'G722', 'NetEq', 'PCM16B', 'aec',
+                                 'aecm', 'agc', 'apm_util', 'audio_coding_module', 'audio_conference_mixer',
+                                 'audio_device', 'audio_processing', 'genperf_libs', 'iLBC', 'iSAC',
+                                 'iSACFix', 'jpeg_turbo', 'media_file', 'ns', 'resampler', 'rtp_rtcp',
+                                 'spl', 'system_wrappers', 'udp_transport', 'vad', 'video_capture_module',
+                                 'video_engine_core', 'video_processing', 'video_render_module',
+                                 'voice_engine_core', 'vpx', 'webrtc_i420', 'webrtc_jpeg', 'webrtc_utility',
+                                 'webrtc_video_coding', 'webrtc_vp8', 'webrtc_vplib'],
+                    extra_link_args = ['-framework', 'Carbon', '-framework', 'AudioToolbox'],
+                   )
+
+setup (name = 'PackageName',
+       version = '1.0',
+       description = 'Python Wrapper to Google WebRTC module',
+       ext_modules = [module1])
+

@@ -1,0 +1,50 @@
+Local Date: Mon Jun 13 18:27:56 2011
+Build info: Jun  7 2011 11:30:07 ?
+
+STATEINFO ; ( 1:27:55:  0 |    0)      UTILITY:         -1;2953842688; Thread with name:Trace started 
+APICALL   ; ( 1:27:56:  0 |    1)        VOICE:    1    99;2686211296; Init()
+STATEINFO ; ( 1:27:56:  0 |    1)      UTILITY:         -1;2954899456; Thread with name:ProcessThread started 
+WARNING   ; ( 1:27:56:  0 |    0)        VOICE:    1    99;2686211296; Init() failed to set Level Estimator state for APmodule (error=8097)
+STATEINFO ; ( 1:27:56:  0 |    0) AUDIO DEVICE:    1    99;2686211296; output: kPlatformDefaultAudio
+STATEINFO ; ( 1:27:56:  0 |    0) AUDIO DEVICE:    1    99;2686211296;   OS info: OS X
+STATEINFO ; ( 1:27:56:  0 |    0) AUDIO DEVICE:    1    99;2686211296; output: available=-1073749553
+STATEINFO ; ( 1:27:56:  0 |    0) AUDIO DEVICE:    1    99;2686211296; output: available=1
+STATEINFO ; ( 1:27:56:  0 |    0) AUDIO DEVICE:    1    99;2686211296; output: available=1
+STATEINFO ; ( 1:27:56:  0 |    0) AUDIO DEVICE:    1    99;2686211296; output: available=1
+APICALL   ; ( 1:27:56:  0 |    0)        VOICE:    1    99;2686211296; GetVersion(version=?)
+STATEINFO ; ( 1:27:56:  0 |    0) AUDIO DEVICE:         -1;2686211296; version: AudioDevice 1.1.0
+STATEINFO ; ( 1:27:56:  0 |    0)    TRANSPORT:         -1;2686211296; Start UdpSocketManagerLinux
+STATEINFO ; ( 1:27:56:  0 |    0)      UTILITY:         -1;2957553664; Thread with name:UdpSocketManagerLinuxImplThread started 
+STATEINFO ; ( 1:27:56:  0 |    0)    TRANSPORT:         -1;2686211296; Stop UdpSocketManagerLinux
+STATEINFO ; ( 1:27:56:  0 |    0)      UTILITY:         -1;2957553664; Thread with name:UdpSocketManagerLinuxImplThread stopped
+STATEINFO ; ( 1:27:56:  0 |    0)        VOICE:    1    99;2686211296; GetVersion() =>
+STATEINFO ; ( 1:27:56:  0 |    0)        VOICE:    1    99;2686211296; VoiceEngine 4.1.0
+Build: Jun  7 2011 11:29:14 ?
+External recording and playout build
+AudioDevice 1.1.0
+UdpTransport 1.1.0
+Module RTP RTCP 1.3.0
+Audio Conference Mixer Module 1.1.0
+STATEINFO ; ( 1:27:56:  0 |    0)        VOICE:    1    99;2686211296; 
+AudioProcessing 1.0.0
+AEC 2.5.0
+AECM 1.2.0
+AGC 1.7.0
+NS 2.2.0
+VAD 1.2.0
+AudioCodingModule 1.3.0
+NetEq		3.3.0
+ISAC		4.3.0
+L16		1.0.0
+G.711		2.0.0
+ILBC		1.1.0
+G.722		2.0.0
+STATEINFO ; ( 1:27:56:  0 |    0)        VOICE:    1    99;2686211296; 
+CNG		1.2.0
+Tone Generation	1.0.0
+
+SPLIB	1.2.0
+
+APICALL   ; ( 1:27:56:  0 |    0)        VOICE:    1    99;2686211296; MaxNumOfChannels()
+STATEINFO ; ( 1:27:56:  0 |    0)        VOICE:    1    99;2686211296; MaxNumOfChannels() => 32
+APICALL   ; ( 1:27:56:  0 |    0)        VOICE:    1    99;2686211296; SetTraceFile(fileNameUTF8=webrtc.log, addFileCounter=0)
